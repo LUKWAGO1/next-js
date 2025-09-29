@@ -1,8 +1,6 @@
-import { Inter, Lusitana } from 'next/font/google';
+// A lightweight fallback for font classNames to avoid remote fetches during dev.
+// In production you can re-enable next/font/google if desired.
 
-export const inter = Inter({ subsets: ['latin'] });
+export const inter = { className: 'font-inter' };
 
-export const lusitana = Lusitana({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-});
+export const lusitana = { className: 'font-lusitana' };
